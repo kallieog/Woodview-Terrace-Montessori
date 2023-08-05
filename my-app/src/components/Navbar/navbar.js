@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Navigation() {
+export default function Navbar() {
   return (
     <nav className="navbar is-link" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
