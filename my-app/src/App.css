@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  background-color: #9DC183;
+}
+
+.Nav{
+  background-color: #B37700;
 }
 
 .App-logo {
@@ -22,10 +28,20 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 .App-link {
   color: #61dafb;
+}
+
+
+.carousel-image {
+  width: 100%;
+}
+
+.carousel-container {
+  width: 100%;
 }
 
 @keyframes App-logo-spin {

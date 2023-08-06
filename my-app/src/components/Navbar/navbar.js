@@ -1,58 +1,87 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
-export default function Navbar() {
+export default function Navigation() {
+  const expand = "lg";
+
   return (
-    <nav className="navbar is-link" role="navigation" aria-label="main navigation">
-      <div className="navbar-brand">
-        <a className="navbar-item" href="/">
-          <div className="logo">
-              Level Cap
-          </div>
-        </a>
-
-        <a
-          role="button"
-          className="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="navbarBasicExample" className="navbar-menu">
-        <div className="navbar-start">
-          <a className="navbar-item">Home</a>
-
-          <a className="navbar-item">Documentation</a>
-
-          <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">More</a>
-
-            <div className="navbar-dropdown">
-              <a className="navbar-item">About</a>
-              <a className="navbar-item">Jobs</a>
-              <a className="navbar-item">Contact</a>
-              <hr className="navbar-divider" />
-              <a className="navbar-item">Report an issue</a>
-            </div>
-          </div>
-        </div>
-
-        <div className="navbar-end">
-          <div className="navbar-item">
-            <div className="buttons">
-              <a className="button is-primary">
-                <strong>Sign up</strong>
-              </a>
-              <a className="button is-light">Log in</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <>
+      <Navbar
+        key={expand}
+        bg="dark"
+        variant="dark"
+        expand={expand}
+        className="mb-3"
+      >
+        <Container fluid>
+          <Navbar.Brand href="#">Woodview Terrace Montessori</Navbar.Brand>
+          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+          <Navbar.Offcanvas
+            id={`offcanvasNavbar-expand-${expand}`}
+            aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+            placement="end"
+          >
+            <Offcanvas.Header closeButton></Offcanvas.Header>
+            <Offcanvas.Body>
+              <Nav className="justify-content-end flex-grow-1 pe-3">
+              <Nav.Link href="/">Home</Nav.Link>
+          
+              <NavDropdown title="Philosophy" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1">Mission statement</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    What is a montessori?
+                  </NavDropdown.Item>
+                 
+                  <NavDropdown.Divider />
+                  
+                  {/* <NavDropdown.Item href="#action/3.4">
+                    Separated link
+                  </NavDropdown.Item> */}
+                </NavDropdown>
+                <NavDropdown title="Programs" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1">Infant</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    Toddler
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    Preschool
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.4">
+                    Kindergarten
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  
+                  {/* <NavDropdown.Item href="#action/3.4">
+                    Separated link
+                  </NavDropdown.Item> */}
+                </NavDropdown>
+                <NavDropdown title="Parent Information" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1">Newsletters</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    Calendar
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    School forms
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.4">
+                    Reading material
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  
+                  {/* <NavDropdown.Item href="#action/3.4">
+                    Separated link
+                  </NavDropdown.Item> */}
+                </NavDropdown>
+                
+              </Nav>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
+        </Container>
+      </Navbar>
+    </>
   );
 }
