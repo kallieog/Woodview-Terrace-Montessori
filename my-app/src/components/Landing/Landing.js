@@ -10,20 +10,33 @@ export default function Landing() {
   return (
     <>
       <Container fluid>
-        <Row className="my-4 mx-3">
-          <Col sm={12} md={5} align="center">
-            <h2>Our Mission:</h2>
-            <br />
-            <p>
-              We are a family-centered and family-owned Montessori school
-              providing quality care and education for children ages 6 weeks
-              through 6 years. We offer a variety of options within each program
-              to suit your family’s needs. Let your child’s lifelong love of
-              learning begin!
-            </p>
+        <Row className="hero-bg">
+          <Col sm={12} md={5}>
+            <div>
+              <img src="https://d2q79iu7y748jz.cloudfront.net/s/_logo/741cc5a954730632bff24248927707dc" className="logo-image" />
+            </div>
           </Col>
-          <Col sm={12} md={5} className="my-3">
-            <Carousel controls={false} class="carousel-container">
+          <Col sm={12} md={5}>
+            
+          </Col>
+        </Row>
+        <Row className="my-4 mx-3">
+          <Col sm={12} md={5} className="align-middle">
+            <div style={{display: 'inline-block'}} align="">
+              <h2>Our Mission:</h2>
+              <br />
+              <p>
+                We are a family-centered and family-owned Montessori school
+                providing quality care and education for children ages 6 weeks
+                through 6 years. We offer a variety of options within each
+                program to suit your family’s needs. Let your child’s lifelong
+                love of learning begin!
+              </p>
+            </div>
+          </Col>
+          <Col sm={12} md={6} className="my-3">
+          <img src="https://static01.nyt.com/images/2019/10/07/well/07klass-school/07klass-school-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="children learning" className="hero-image" />
+            {/* <Carousel controls={false} class="carousel-container">
               <Carousel.Item>
                 <img
                   src="https://media.istockphoto.com/id/1031384160/photo/primary-school-kids-run-holding-hands-in-corridor-close-up.jpg?s=612x612&w=0&k=20&c=a7ROQEvnnf7H8KECAlMl9KZAXn8sc38IknUGm7aimQA="
@@ -42,7 +55,7 @@ export default function Landing() {
                   class="carousel-image"
                 />
               </Carousel.Item>
-            </Carousel>
+            </Carousel> */}
           </Col>
         </Row>
       </Container>

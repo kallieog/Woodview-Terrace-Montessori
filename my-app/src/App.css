@@ -1,16 +1,31 @@
 .App {
   text-align: center;
-  font-family: 'Libre Baskerville', serif;
-  background-color: #9DC183;
+  font-family: "Libre Baskerville", serif;
+  background-color: #9dc183;
 }
 
-.Nav{
-  background-color: #B37700;
+.Nav {
+  background-color: #b37700;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.hero-bg {
+  background: white;
+  background-image: url("https://media.istockphoto.com/id/1317638729/vector/floral-horizontal-background.jpg?s=612x612&w=0&k=20&c=l6lvNIguQ0lWFFEhSkbWQcok0IDlDRkxKCmdiqtBKq8=");
+  background-position: 50%;
+  padding-top: 10px;
+}
+
+.logo-image {
+  box-shadow: 0 0 8px 8px white inset;
+}
+
+.hero-image {
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -28,13 +43,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  
 }
 
 .App-link {
   color: #61dafb;
 }
-
 
 .carousel-image {
   width: 100%;
