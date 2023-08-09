@@ -3,6 +3,7 @@ import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar/Navbar";
 import Landing from "./components/Landing/Landing";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       
       <Navbar />
       <Landing />
+      <Footer />
     </div>
   );
 }

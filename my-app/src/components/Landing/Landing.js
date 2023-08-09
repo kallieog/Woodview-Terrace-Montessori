@@ -20,12 +20,12 @@ export default function Landing() {
             
           </Col>
         </Row>
-        <Row className="my-4 mx-3">
-          <Col sm={12} md={5} className="align-middle">
-            <div style={{display: 'inline-block'}} align="">
-              <h2>Our Mission:</h2>
+        <Row className="my-4 mx-5">
+          <Col sm={12} md={6}>
+            <div style={{display: 'inline-block'}} className="left-col">
+              <h2 className="large-text">Our Mission:</h2>
               <br />
-              <p>
+              <p className="small-text">
                 We are a family-centered and family-owned Montessori school
                 providing quality care and education for children ages 6 weeks
                 through 6 years. We offer a variety of options within each
@@ -34,7 +34,7 @@ export default function Landing() {
               </p>
             </div>
           </Col>
-          <Col sm={12} md={6} className="my-3">
+          <Col sm={12} md={6}>
           <img src="https://static01.nyt.com/images/2019/10/07/well/07klass-school/07klass-school-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="children learning" className="hero-image" />
             {/* <Carousel controls={false} class="carousel-container">
               <Carousel.Item>
