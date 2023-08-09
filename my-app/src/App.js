@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Landing from "./components/Landing/Landing";
+import Footer from "./components/Footer/Footer";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Infant from "./components/Programs/Infant/Infant";
 import Toddler from "./components/Programs/Toddler/Toddler";
@@ -34,7 +35,6 @@ function App() {
         <Router>
           <>
             <Navbar />
-
             <Routes>
               <Route path="/" element={<Landing />} />
               <Route path="/Testimonials" element={<Testimonials />} />
@@ -48,6 +48,7 @@ function App() {
               <Route path="ReadingMaterial" element={<ReadingMaterial />} />
               <Route path="Contact" element={<Contact />} />
             </Routes>
+            <Footer />
           </>
         </Router>
       </div>
