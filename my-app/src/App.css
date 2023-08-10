@@ -2,8 +2,6 @@
   text-align: center;
   font-family: "Libre Baskerville", serif;
   background-color: #9dc183;
-  height: 100vh;
-  width: 100vw;
 }
 
 #offcanvasNavbar-expand-lg {
@@ -52,6 +50,14 @@ Nav .navText {
   padding-top: 10px;
 }
 
+.landing-bg {
+  background-image: url("https://1.bp.blogspot.com/-JXKLbblO1gE/XVhffYkoXwI/AAAAAAAAMCI/78O7N8u1CtoRRyezIoBDtlDT0rYPt1bbACEwYBhgL/s1600/paper_seamless_dirty_white_texture.jpg");
+  background-repeat: repeat;
+}
+.content {
+  position: relative;
+}
+
 .logo-image {
   box-shadow: 0 0 8px 8px white inset;
 }
@@ -65,6 +71,21 @@ Nav .navText {
   font-weight: 150;
   border-bottom: 1px white solid;
   color: white;
+}
+
+.large-text-dark {
+  font-size: 35pt;
+  font-weight: 150;
+  color: rgb(35, 35, 35);
+}
+
+.medium-text-dark {
+  font-size: 14pt;
+  font-weight: 130;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: rgb(35, 35, 35);
+  border-bottom: 1px rgb(35, 35, 35) solid;
 }
 
 .small-text {
@@ -84,6 +105,7 @@ Nav .navText {
   position: fixed;
   bottom: 0px;
   width: 100vw;
+  z-index: 100;
 }
 
 .footlogo {
