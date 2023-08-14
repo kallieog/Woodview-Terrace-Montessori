@@ -59,7 +59,7 @@ Nav .navText {
 }
 
 .logo-image {
-  box-shadow: 0 0 8px 8px white inset;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 8%, rgba(255,255,255,1) 17%, rgba(255,255,255,1) 79%, rgba(255,255,255,0) 91%);
 }
 
 .hero-image {

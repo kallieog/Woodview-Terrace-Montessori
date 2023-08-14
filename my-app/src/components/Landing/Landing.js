@@ -15,14 +15,13 @@ export default function Landing() {
         <div className="content">
           <Row className="hero-bg">
             <Col sm={12} md={5}>
-              <div>
-                <img
+              <div className="logo-image" style={{width: "700px"}}>
+                <img 
                   src="https://d2q79iu7y748jz.cloudfront.net/s/_logo/741cc5a954730632bff24248927707dc"
-                  className="logo-image"
                 />
               </div>
             </Col>
-            <Col sm={12} md={5}></Col>
+            <Col sm={12} md={7}></Col>
           </Row>
           <Row className="my-4 mx-5 mb-5">
             <Col sm={12} md={6}>
